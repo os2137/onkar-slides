@@ -214,16 +214,15 @@ name: chapter-9
   + The molecules in gas are far away and they have lot of space to move, gases have neighter definate shape or nor definite volume. 
 
 ---
+
 ## Chapter 9: Q&A Continued
+
 * What is sublimation? Explain the process with an example? 
 
   + The submitation is a process in which solid turns into gas directly without turning into liquid, when heated. e.g. camphor when it is kept in open or heated it directly turns into gas without turning into liquid. 
+  
 
-
-
-
-
---- 
+---
 ## Chapter 9: Q&A Contintued
 
 * Define the follwoing terms: solute, solvent, solutioon
@@ -233,8 +232,9 @@ name: chapter-9
   + Solution: The substance which is formed by dissolving a solute in a solvent is called Solution. 
 
 
---- 
+---
 ## Chapter 9: Q&A Contintued
+
 * What is a saturated solution? Does a saturated solution always hold the same amount of solute? 
 
   + A saturated solution is a solution in which the solvent cannot dissolve any more solute at a given temperature. A solution may dissovle more solute if it heated. 
