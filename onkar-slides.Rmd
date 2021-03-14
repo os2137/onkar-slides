@@ -650,8 +650,6 @@ knitr::include_graphics("img/parts_teeth.jpg")
 
 
 
-
-
 ---
 ## Chapter 6: Fill in the blanks to form similar pair of words
 
@@ -671,12 +669,13 @@ knitr::include_graphics("img/parts_teeth.jpg")
 * Look at the picture on the next page
 
 
-
 ```{r}
 knitr::include_graphics("img/digestive-system.jpeg")
 ```
 
 
+--- 
+## Picture Question Contd..
   - a. Lable the parts marked in the picture
   
     + A. Mouth
@@ -687,13 +686,18 @@ knitr::include_graphics("img/digestive-system.jpeg")
     + F. Small Intestines
     + G. Large Intestines
     + H. Anus
-  
+ 
+ 
+---
+## Picture Question Contd..
   - b. What happens in the parts marked A and D? 
     + In A i.e. Mouth. We use to swallow food from mouth, the process starts with the food entering the mouth, the saliva starts breaking down the carbodydrates, the tongue rolls the food and and we swalow it.
     + D i.e Stomach, when we eat food, it will stay for few hours. Stomach juices partly breakdwon protein. The partly digested food (chyme) moves to the small intestine. 
- 
- 
- ---  
+
+
+
+---
+## Picture Question Contd..
   - c. What is the funciton of part B? 
   
     + B i.e. Oesophagus. Oesophagus is the food pipe. the food travles down it from the mouth to the stomach. 
@@ -707,7 +711,9 @@ knitr::include_graphics("img/digestive-system.jpeg")
   
     + F i.e. Small Intestine: The juices from the liver and pancreas breakdown protein, carbohydrates and fats. the walls of the small intestine absorb the digested food. 
 
- 
+
+---
+## Additional Questions
 * Draw and label the parts of a tooth. 
 
 * Why are milk teeth also called temporary teeth? How many milk teeth do humans have? 
@@ -715,6 +721,9 @@ knitr::include_graphics("img/digestive-system.jpeg")
 * What is the function of enamel? 
 
 * List four steps that you neeed to follow to have healthy teeth. 
+
+
+
 
 ---
 class: centre, top
