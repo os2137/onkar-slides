@@ -26,10 +26,14 @@ output:
 library(knitr)
 library(tidyverse)
 library(nhsrtheme)
-devtools::install_github("gadenbuie/xaringanExtra")
+# devtools::install_github("gadenbuie/xaringanExtra")
 library(xaringanExtra)
-xaringanExtra::use_tile_view()
+xaringanExtra::use_tile_view() # slide overview feature with tile view, lets us to see overview of all slides when we press O in the presentation 
 # set default options
+
+# Slide embedding feature with share again
+
+
 opts_chunk$set(echo = FALSE,
                fig.width = 7.252,
                fig.height = 4,
@@ -41,6 +45,39 @@ opts_chunk$set(echo = FALSE,
 # scale_colour_continuous <- partial(scale_colour_nhs, discrete = FALSE)
 # scale_colour_discrete <- partial(scale_colour_nhs, discrete = TRUE)
 ```
+
+
+
+---
+class: inverse, middle
+
+# Outline
+
+.pull-left[
+
+Outline slides like this one are commonly found in the wild. If they incorporate links they can become a useful "table of contents" for a slide deck.  
+
+Downside is they aren't very memorable. I would encourage a "roadmap" approach to your presentations, using interesting transition slides that let your audience know where you've been and where you're going next.
+
+]<!--end of left-column-->
+
+.pull-right[
+.left[
+1\. [Chatper 5: Food and Nutrition](#chapter-5)
+
+2\. [Chatper 6: Digestion and Our Teeth](#chapter-6)
+
+3\. [Chapter 9: Matter and Its States](#chapter-9)
+
+4\. [Chapter 11: The Environment](#chapter-11)
+]
+] <!--end of right-column-->
+
+
+
+
+
+
 
 class: title-slide, left, bottom
 
@@ -107,7 +144,8 @@ class: inverse, middle, center
 
 
 ---
-# Choose the correct answer. 
+name: chapter-9
+# Chatper 9: Choose the correct answer. 
 
 * The space between molecules is smallest in____
 
@@ -130,7 +168,7 @@ class: inverse, middle, center
   
 
 ---
-# Fill in the blanks
+# Chapter 9: Fill in the blanks
 
   + Matter is made of tiny particles called (molecules)
 
@@ -143,7 +181,7 @@ class: inverse, middle, center
   + A solute and a solvent together form a (solution)
 
 ---
-## What are the processes marked A, B, C, D and E ? 
+## Chapter 9: What are the processes marked A, B, C, D and E ? 
 
   + A. Liquid to Solid (Freezing)
   
@@ -155,14 +193,13 @@ class: inverse, middle, center
   
   + E. Solid to Gas (Sublimation)
 
---- 
 
 ---
-# Answer the folowing questions
+# Chapter 9: Answer the folowing questions
 
 * What is matter? Name the three states of matter and give examples of substances in each state
 
-  + Matter is anything that takes up place and has weight
+  + Matter is anything that has weight and takes up space .
   + Theree states of matters are Solid, Liquid and Gas
   + Solid: Wood, Glass
   + Liquid: Water and Oil
@@ -172,12 +209,12 @@ class: inverse, middle, center
 
   + Molecules in the solid are closely packed, they have definite shape and volume
   
-  + The space between between the molecules is more in liuid than solid, liquid doesnt have definite shape but liquid has definite volume
+  + The space between between the molecules is more in liquid than solid, liquid doesn't have definite shape but liquid has definite volume
   
   + The molecules in gas are far away and they have lot of space to move, gases have neighter definate shape or nor definite volume. 
 
 ---
-## Q&A Continued
+## Chapter 9: Q&A Continued
 * What is sublimation? Explain the process with an example? 
 
   + The submitation is a process in which solid turns into gas directly without turning into liquid, when heated. e.g. camphor when it is kept in open or heated it directly turns into gas without turning into liquid. 
@@ -187,7 +224,7 @@ class: inverse, middle, center
 
 
 --- 
-## Q&A Contintued
+## Chapter 9: Q&A Contintued
 
 * Define the follwoing terms: solute, solvent, solutioon
 
@@ -197,7 +234,7 @@ class: inverse, middle, center
 
 
 --- 
-## Q&A Contintued
+## Chapter 9: Q&A Contintued
 * What is a saturated solution? Does a saturated solution always hold the same amount of solute? 
 
   + A saturated solution is a solution in which the solvent cannot dissolve any more solute at a given temperature. A solution may dissovle more solute if it heated. 
@@ -210,7 +247,8 @@ class: inverse, middle, center
 
 
 ---
-## To sum up
+name: chapter-11
+## Chapter 11: To sum up
 
 * The environment includes everything that sorrounds us. 
 
@@ -226,7 +264,7 @@ class: inverse, middle, center
 
 
 ---
-## Choose the correct answer: 
+## Chapter 11: Choose the correct answer: 
 
 * What do we get from the environment? 
 
@@ -250,28 +288,29 @@ class: inverse, middle, center
  
  
 ---
-## Sort the following materials into two categories- biodegradable and non-biodegradable
+## Chapter 11: Sort the following materials into two categories- biodegradable and non-biodegradable
 
-* Vegetable peel, alumninium foil, pencil shavings, cotton candy, plastic scale, paper, napkin, plastic raincoat, jute bag, glass bottle, fot-drink can, light bulb
+* Vegetable peel, alumninium foil, pencil shavings, cotton candy, plastic scale, paper, napkin, plastic raincoat, jute bag, glass bottle, soft-drink can, light bulb
 
   + **Biodegradable**
     * vegetable peel 
-    * 
-    * 
-    *
-    *
+    * pencil shavings
+    * paper
+    * napkin
+    * jute bag
     *
     *
     *
     
   + **Non-biodegradable**
   
-    * 
-    *
-    *
-    *
-    *
-    *
+    * aluminium foil
+    * cotton candy
+    * plastic scale
+    * plastic raincoat
+    * glass bottle
+    * soft-drink can
+    * light bulb
     *
     *
     
@@ -279,7 +318,7 @@ class: inverse, middle, center
 
 
 ---
-## Fill in the blanks
+## Chapter 11:  Fill in the blanks
 
 * Humans depend directly or indirectly on the (environment) for their needs. 
 
@@ -289,33 +328,48 @@ class: inverse, middle, center
 
 * The engergy that we get from the moving water is called (hydro-electric) engergy. 
 
-* Garbage bins are good places for () and () to live and multiply. 
+* Garbage bins are good places for (germs) and (pests) to live and multiply. 
 
 
 ---
-## Answer the following questions
+## Chpater 11: Answer the following questions
 
 1. Define the term 'environment'. 
 
-* 
+* Everything that surrrounds and affects a living thing is its environment. 
 
 2. In what ways do we depend on the environment? 
 
-*
+* We depend on the environment directly and or indirectly for everything we need. 
 
 3. List a few causes of water pollution? 
 
-*
+* The  few causes of water polllution are
+  + wastes from homes
+  + wastes from houses
+  + wastes from factories
+  + wastes from farms
+
+
+
+
+
+
+---
+## Chpater 11: Answer the following questions contd...
 
 4. Give two ways by which we can reduce soil pollution. 
 
-*
+* Not throwing food wastes 
+* Sending the sewage to the treatment plants where the harmful substances are removed
+* Making the sure that the sewage pipe in our house do not leak. 
+
 
 5. Explain the difference bewteen biodegradable and non-biodradable materials using examples. 
 
-*
+* Biodradable materials: Biodegradablel materials break down easily. e.g. food feel, pencil shavins, paper, cotton
 
-
+* Non-biodegradable materials: These don't break down easily. e.g. cotton candy, aluminium foil, metal, tin, plastic
 
 ---
 class: inverse, middle, center
@@ -323,6 +377,7 @@ class: inverse, middle, center
 
 
 ---
+name: chapter-5
 ## Chatper 5: To sum up
 
 * Nutrition (taking in food) is important for proper growth and health. 
@@ -494,6 +549,7 @@ class: inverse, middle, center
 
 
 ---
+name: chapter-6
 ## Chapter 6: To sum up
 
 * Food is broked down into simple substances by digestion. 
@@ -562,7 +618,7 @@ knitr::include_graphics("img/parts_teeth.jpg")
   .pull-right[
   
   
-* What type of teeth are P and Q inteh diagram? 
+* What type of teeth are P and Q in the diagram? 
 
   - **incisor**
   - canine
@@ -577,6 +633,7 @@ knitr::include_graphics("img/parts_teeth.jpg")
   - **molar**
   - pre-molar
  ] 
+ 
 ---
 ## Chapter 6:  Fill in the blanks
 
@@ -586,7 +643,7 @@ knitr::include_graphics("img/parts_teeth.jpg")
 
 - Partly digested food is called (chyme)
 
-- The (incisor) are flat, sharp teeth that helps us to bite our food. 
+- The (incisors) are flat, sharp teeth that helps us to bite our food. 
 
 - If we dont take are of our teeth, we may get (cavities), bad breadth and diseased gums. 
 
@@ -596,9 +653,9 @@ knitr::include_graphics("img/parts_teeth.jpg")
 
 
 ---
-## Chapter 6: Fill in the blanks for form similar pair of words
+## Chapter 6: Fill in the blanks to form similar pair of words
 
-- mouth and (tognue) / small intestine and fats
+- mouth and (carbohydrates) / small intestine and fats
 
 - mouth and saliva / liver and (bile)
 
@@ -622,13 +679,33 @@ knitr::include_graphics("img/digestive-system.jpeg")
 
   - a. Lable the parts marked in the picture
   
-  - b. What happens in the parts marked A and D? 
+    + A. Mouth
+    + B. Oesophagus
+    + C. Liver
+    + D. Stomach
+    + E. Pancreas
+    + F. Small Intestines
+    + G. Large Intestines
+    + H. Anus
   
+  - b. What happens in the parts marked A and D? 
+    + In A i.e. Mouth. We use to swallow food from mouth, the process starts with the food entering the mouth, the saliva starts breaking down the carbodydrates, the tongue rolls the food and and we swalow it.
+    + D i.e Stomach, when we eat food, it will stay for few hours. Stomach juices partly breakdwon protein. The partly digested food (chyme) moves to the small intestine. 
+ 
+ 
+ ---  
   - c. What is the funciton of part B? 
   
-  - d. What are produced by the parts marked C and D? 
+    + B i.e. Oesophagus. Oesophagus is the food pipe. the food travles down it from the mouth to the stomach. 
+  
+  - d. What are produced by the parts marked C and E? 
+  
+    + C i.e. Lever produces the juice bile, which helps to digest fats. 
+    + E i.e. Pancreas makes juices that digest carbodydrates, proteins and fats. 
   
   - e. What are the funcitons of the parts marked F and G? 
+  
+    + F i.e. Small Intestine: The juices from the liver and pancreas breakdown protein, carbohydrates and fats. the walls of the small intestine absorb the digested food. 
 
  
 * Draw and label the parts of a tooth. 
