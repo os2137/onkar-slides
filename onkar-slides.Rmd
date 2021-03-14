@@ -674,7 +674,8 @@ knitr::include_graphics("img/digestive-system.jpeg")
 ```
 
 
---- 
+
+---
 ## Picture Question Contd..
   - a. Lable the parts marked in the picture
   
