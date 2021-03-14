@@ -22,6 +22,8 @@ output:
       after_body: [css/insert-logo.html]
 ---
 
+
+
 ```{r setup, include = FALSE}
 library(knitr)
 library(tidyverse)
@@ -29,6 +31,10 @@ library(nhsrtheme)
 # devtools::install_github("gadenbuie/xaringanExtra")
 library(xaringanExtra)
 xaringanExtra::use_tile_view() # slide overview feature with tile view, lets us to see overview of all slides when we press O in the presentation 
+
+xaringanExtra::use_panelset() # for creating panelset or tab within a slide: Create a .panelset[] containing a .panel[] that itself has a .panel-name[]
+
+
 # set default options
 
 # Slide embedding feature with share again
@@ -691,14 +697,17 @@ knitr::include_graphics("img/digestive-system.jpeg")
  
 ---
 ## Picture Question Contd..
+.fade[
   - b. What happens in the parts marked A and D? 
     + In A i.e. Mouth. We use to swallow food from mouth, the process starts with the food entering the mouth, the saliva starts breaking down the carbodydrates, the tongue rolls the food and and we swalow it.
     + D i.e Stomach, when we eat food, it will stay for few hours. Stomach juices partly breakdwon protein. The partly digested food (chyme) moves to the small intestine. 
-
+]
 
 
 ---
 ## Picture Question Contd..
+
+.small[
   - c. What is the funciton of part B? 
   
     + B i.e. Oesophagus. Oesophagus is the food pipe. the food travles down it from the mouth to the stomach. 
@@ -711,10 +720,13 @@ knitr::include_graphics("img/digestive-system.jpeg")
   - e. What are the funcitons of the parts marked F and G? 
   
     + F i.e. Small Intestine: The juices from the liver and pancreas breakdown protein, carbohydrates and fats. the walls of the small intestine absorb the digested food. 
-
+]
 
 ---
+
 ## Additional Questions
+
+.pink[
 * Draw and label the parts of a tooth. 
 
 * Why are milk teeth also called temporary teeth? How many milk teeth do humans have? 
@@ -723,7 +735,7 @@ knitr::include_graphics("img/digestive-system.jpeg")
 
 * List four steps that you neeed to follow to have healthy teeth. 
 
-
+]
 
 
 ---
@@ -860,3 +872,43 @@ NHSRdatasets::LOS_model %>%
   head() #<<
 ```
 
+
+
+---
+# Slide panels with Panelset
+
+.panelset[
+.panel[.panel-name[Chapter 5]
+Notes from Chapter 5
+]<!-- end of panel-->
+.panel[.panel-name[Chapter 6]
+Notes from Chapter 6
+]<!-- end of panel-->
+
+.panel[.panel-name[Chapter 9]
+Notes from Chapter 9
+
+.pull-left[
+pulling some content to the left within chapter 9
+* bullet 1
+* bullet 2
+* bullet 3
+* bullet 4
+* bullet 5
+]
+
+.pull-right[
+pulling some content to the right within chapter 9
+* bullet 1
+* bullet 2
+* bullet 3
+* bullet 4
+* bullet 5
+]
+
+]<!-- end of panel-->
+
+.panel[.panel-name[Chapter 11]
+Notes from Chapter 11
+]<!-- end of panel-->
+]

@@ -171,3 +171,10 @@ blockquote {
 .pink       { color:   #AE2573 }
 .red        { color:   #DA291C }
 .warmyellow { color:   #FFB81C }
+
+
+/*-- CUSTOM CLASSES FOR FADE and SMALL WHICH OAS DIS IN THE CLASS --*/
+.fade       { opacity:   0.5; }
+.small      { font-size: 70% }
+
+
