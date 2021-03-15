@@ -34,7 +34,9 @@ xaringanExtra::use_tile_view() # slide overview feature with tile view, lets us 
 
 xaringanExtra::use_panelset() # for creating panelset or tab within a slide: Create a .panelset[] containing a .panel[] that itself has a .panel-name[]
 
+xaringanExtra::use_webcam() # enabling camera use option within slides
 
+xaringanExtra::use_search(show_icon = TRUE) # Enaling search with the xaringan slides
 # set default options
 
 # Slide embedding feature with share again
@@ -488,7 +490,7 @@ name: chapter-5
 
 * There are two main types of nutrients (False/R)
 
-* Fats are a source of energy (False/I)
+* Fats are a source of energy (TRUE/I)
 
 * Vitamins protect us from illness (True/T)
 
@@ -719,7 +721,8 @@ knitr::include_graphics("img/digestive-system.jpeg")
   
   - e. What are the funcitons of the parts marked F and G? 
   
-    + F i.e. Small Intestine: The juices from the liver and pancreas breakdown protein, carbohydrates and fats. the walls of the small intestine absorb the digested food. 
+    + F i.e. Small Intestine: The juices from the liver and pancreas breakdown protein, carbohydrates and fats. The walls of the small intestine absorb the digested food. 
+    + G i.e. Large Intestine: Water is absored here. The remaining wastes are sent out through the anus. 
 ]
 
 ---
