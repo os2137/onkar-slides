@@ -4,6 +4,8 @@ subtitle: "Presentation subtitle"
 author: "Author Name"
 institute: "NHS Organisation"
 date: "Presentation Date"
+params: 
+  thing: "Hello"
 output:
   xaringan::moon_reader:
     css: 
@@ -36,7 +38,18 @@ xaringanExtra::use_panelset() # for creating panelset or tab within a slide: Cre
 
 xaringanExtra::use_webcam() # enabling camera use option within slides
 
-xaringanExtra::use_search(show_icon = TRUE) # Enaling search with the xaringan slides
+xaringanExtra::use_search(show_icon = FALSE) # Enaling search with the xaringan slides
+
+xaringanExtra::use_scribble() # enabling scribbling on the slide
+
+xaringanExtra::use_fit_screen() # enabling fit to screen
+
+
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+) ## implementing extra styles
+
 # set default options
 
 # Slide embedding feature with share again
@@ -54,6 +67,13 @@ opts_chunk$set(echo = FALSE,
 # scale_colour_discrete <- partial(scale_colour_nhs, discrete = TRUE)
 ```
 
+
+---
+# `r params$thing`
+
+
+---
+# and if we rmarkdown::render("onkar-slides.Rmd" , params = list(thing = "Good bye")) it prints the file with Good Bye instead of Hello as in the above. 
 
 
 ---
@@ -742,6 +762,7 @@ knitr::include_graphics("img/digestive-system.jpeg")
 
 
 ---
+
 class: centre, top
 
 ## Emoji slide
@@ -761,6 +782,7 @@ class: centre, top
 ```
 
 ---
+exclude: true
 ## Insert Picture Slide
 
 
@@ -915,3 +937,30 @@ pulling some content to the right within chapter 9
 Notes from Chapter 11
 ]<!-- end of panel-->
 ]
+
+---
+Inspect the html and css code
+
+```{r}
+runif(10)
+```
+  
+
+
+---
+Checkout the xaringanbuilder package a new packages
+
+Self contianed option in xaringan what is that?? pls pls single file self contained = true
+
+citr cider packages for references, ref manager in xaringan 
+
+
+---
+Can xaringan slides be parameterized like other rmarkdown document
+
+
+---
+```{r}
+rmarkdown::render("onkar-slides.Rmd" , params = list(thing = "Good bye"))
+```
+

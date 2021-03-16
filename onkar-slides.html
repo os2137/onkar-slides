@@ -15,7 +15,13 @@
     <script src="libs/mark.js-8.11.1/mark.min.js"></script>
     <link href="libs/xaringanExtra-search-0.0.1/search.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-search-0.0.1/search.js"></script>
-    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":false,"autoSearch":true}) })</script>
+    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
+    <script src="libs/xaringanExtra_fit-screen-0.2.6/fit-screen.js"></script>
+    <link href="libs/xaringanExtra-extra-styles-0.2.6/xaringanExtra-extra-styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/nhsr.css" type="text/css" />
     <link rel="stylesheet" href="css/nhsr-fonts.css" type="text/css" />
   </head>
@@ -27,6 +33,13 @@
 
 
 
+
+---
+# Hello
+
+
+---
+# and if we rmarkdown::render("onkar-slides.Rmd" , params = list(thing = "Good bye")) it prints the file with Good Bye instead of Hello as in the above. 
 
 
 ---
@@ -711,6 +724,7 @@ name: chapter-6
 
 
 ---
+
 class: centre, top
 
 ## Emoji slide
@@ -726,6 +740,7 @@ class: centre, top
 
 
 ---
+exclude: true
 ## Insert Picture Slide
 
 
@@ -738,7 +753,7 @@ Direct input
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#pqacvvpoil .gt_table {
+#urqudrutpe .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -763,7 +778,7 @@ Direct input
   border-left-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_heading {
+#urqudrutpe .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -775,7 +790,7 @@ Direct input
   border-right-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_title {
+#urqudrutpe .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -785,7 +800,7 @@ Direct input
   border-bottom-width: 0;
 }
 
-#pqacvvpoil .gt_subtitle {
+#urqudrutpe .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -795,13 +810,13 @@ Direct input
   border-top-width: 0;
 }
 
-#pqacvvpoil .gt_bottom_border {
+#urqudrutpe .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_col_headings {
+#urqudrutpe .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -816,7 +831,7 @@ Direct input
   border-right-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_col_heading {
+#urqudrutpe .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -836,7 +851,7 @@ Direct input
   overflow-x: hidden;
 }
 
-#pqacvvpoil .gt_column_spanner_outer {
+#urqudrutpe .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -848,15 +863,15 @@ Direct input
   padding-right: 4px;
 }
 
-#pqacvvpoil .gt_column_spanner_outer:first-child {
+#urqudrutpe .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pqacvvpoil .gt_column_spanner_outer:last-child {
+#urqudrutpe .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pqacvvpoil .gt_column_spanner {
+#urqudrutpe .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -868,7 +883,7 @@ Direct input
   width: 100%;
 }
 
-#pqacvvpoil .gt_group_heading {
+#urqudrutpe .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -890,7 +905,7 @@ Direct input
   vertical-align: middle;
 }
 
-#pqacvvpoil .gt_empty_group_heading {
+#urqudrutpe .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -905,15 +920,15 @@ Direct input
   vertical-align: middle;
 }
 
-#pqacvvpoil .gt_from_md > :first-child {
+#urqudrutpe .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pqacvvpoil .gt_from_md > :last-child {
+#urqudrutpe .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pqacvvpoil .gt_row {
+#urqudrutpe .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -932,7 +947,7 @@ Direct input
   overflow-x: hidden;
 }
 
-#pqacvvpoil .gt_stub {
+#urqudrutpe .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -944,7 +959,7 @@ Direct input
   padding-left: 12px;
 }
 
-#pqacvvpoil .gt_summary_row {
+#urqudrutpe .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -954,7 +969,7 @@ Direct input
   padding-right: 5px;
 }
 
-#pqacvvpoil .gt_first_summary_row {
+#urqudrutpe .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -964,7 +979,7 @@ Direct input
   border-top-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_grand_summary_row {
+#urqudrutpe .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -974,7 +989,7 @@ Direct input
   padding-right: 5px;
 }
 
-#pqacvvpoil .gt_first_grand_summary_row {
+#urqudrutpe .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -984,11 +999,11 @@ Direct input
   border-top-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_striped {
+#urqudrutpe .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pqacvvpoil .gt_table_body {
+#urqudrutpe .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -997,7 +1012,7 @@ Direct input
   border-bottom-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_footnotes {
+#urqudrutpe .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1011,13 +1026,13 @@ Direct input
   border-right-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_footnote {
+#urqudrutpe .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#pqacvvpoil .gt_sourcenotes {
+#urqudrutpe .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1031,46 +1046,46 @@ Direct input
   border-right-color: #D3D3D3;
 }
 
-#pqacvvpoil .gt_sourcenote {
+#urqudrutpe .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#pqacvvpoil .gt_left {
+#urqudrutpe .gt_left {
   text-align: left;
 }
 
-#pqacvvpoil .gt_center {
+#urqudrutpe .gt_center {
   text-align: center;
 }
 
-#pqacvvpoil .gt_right {
+#urqudrutpe .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pqacvvpoil .gt_font_normal {
+#urqudrutpe .gt_font_normal {
   font-weight: normal;
 }
 
-#pqacvvpoil .gt_font_bold {
+#urqudrutpe .gt_font_bold {
   font-weight: bold;
 }
 
-#pqacvvpoil .gt_font_italic {
+#urqudrutpe .gt_font_italic {
   font-style: italic;
 }
 
-#pqacvvpoil .gt_super {
+#urqudrutpe .gt_super {
   font-size: 65%;
 }
 
-#pqacvvpoil .gt_footnote_marks {
+#urqudrutpe .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="pqacvvpoil" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="urqudrutpe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
@@ -1264,6 +1279,31 @@ pulling some content to the right within chapter 9
 Notes from Chapter 11
 ]&lt;!-- end of panel--&gt;
 ]
+
+---
+Inspect the html and css code
+
+
+```
+##  [1] 0.07678934 0.99976202 0.34326269 0.57556754 0.64056926
+##  [6] 0.33789559 0.29109585 0.33506864 0.67184309 0.13264103
+```
+  
+
+
+---
+Checkout the xaringanbuilder package a new packages
+
+Self contianed option in xaringan what is that?? pls pls single file self contained = true
+
+citr cider packages for references, ref manager in xaringan 
+
+
+---
+Can xaringan slides be parameterized like other rmarkdown document
+
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
